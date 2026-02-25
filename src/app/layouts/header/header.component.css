@@ -1,0 +1,173 @@
+/* Top Bar Styles */
+.top-bar {
+  font-size: 0.875rem;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.top-bar a {
+  transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+  color: #3498db !important;
+}
+
+/* Navigation Styles */
+.navbar {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.brand-text h4 {
+  color: #2c3e50;
+  font-family: 'Georgia', serif;
+}
+
+.brand-text small {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+/* Navigation Links */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+  margin: 0 0.25rem;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background-color: rgba(0,123,255,0.1);
+  color: #0056b3 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: rgba(0,123,255,0.15);
+  color: #0056b3 !important;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 80%;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+  transform: translateX(5px);
+}
+
+/* CTA Buttons */
+.btn {
+  border-radius: 25px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,123,255,0.4);
+  background-color: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .top-bar {
+    text-align: center;
+  }
+  
+  .top-bar .col-md-6:first-child {
+    margin-bottom: 0.5rem;
+  }
+  
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+  
+  .d-flex.align-items-center {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .d-flex.align-items-center .btn {
+    width: 100%;
+  }
+}
+
+/* Sticky Navigation Enhancement */
+.navbar.sticky-top {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Icon Animations */
+.nav-link i,
+.btn i {
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover i,
+.btn:hover i {
+  transform: scale(1.2);
+}
+
+/* Logo Animation */
+@keyframes logoGlow {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.1); }
+}
+
+.navbar-brand img:hover {
+  animation: logoGlow 2s ease-in-out infinite;
+}

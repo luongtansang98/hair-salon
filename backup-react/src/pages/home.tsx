@@ -33,71 +33,71 @@ const Home = () => {
       });
   }, []);
   return (
-    <div class="container-fluid background-app">
+    <div className="container-fluid background-app">
       
 
       <div
         id="carouselExampleFade"
-        class="carousel slide carousel-fade container mt-3"
+        className="carousel slide carousel-fade container mt-3"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={carousel1} class="d-block w-100" alt="..." />
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={carousel1} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={carousel2} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={carousel2} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={carousel3} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={carousel3} className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleFade"
           data-bs-slide="prev"
         >
           <span
-            class="carousel-control-prev-icon"
+            className="carousel-control-prev-icon"
             aria-hidden="true"
           ></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleFade"
           data-bs-slide="next"
         >
           <span
-            class="carousel-control-next-icon"
+            className="carousel-control-next-icon"
             aria-hidden="true"
           ></span>
-          <span class="visually-hidden">Next</span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
 
       <div
         id="book-shortcut"
-        class="d-flex justify-content-center mt-3 mb-3 container"
+        className="d-flex justify-content-center mt-3 mb-3 container"
       >
-        <div class="booking-container booking-wrapper strong-blue">
+        <div className="booking-container booking-wrapper strong-blue">
           <div>
             <p>
               <b>ĐẶT LỊCH GIỮ CHỖ CHỈ 30 GIÂY</b>
             </p>
           </div>
-          <div class="input-group mb-3 mt-3">
+          <div className="input-group mb-3 mt-3">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Nhập số điện thoại..."
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
             />
             <button
-              class="btn btn-outline-light"
+              className="btn btn-outline-light"
               type="button"
               id="button-addon2"
             >
@@ -106,103 +106,103 @@ const Home = () => {
           </div>
         </div>
 
-        <div class="booking-container booking-wrapper  ms-2 w-auto">
+        <div className="booking-container booking-wrapper  ms-2 w-auto">
           <div>
             <p>
               <b>GỌI TRỰC TIẾP</b>
             </p>
           </div>
-          <div class="mb-3 mt-3">
+          <div className="mb-3 mt-3">
             <button
-              class="btn btn-outline-secondary w-100"
+              className="btn btn-outline-secondary w-100"
               type="button"
               id="button-addon2"
             >
-              <i class="fa fa-phone" aria-hidden="true"></i>
+              <i className="fa fa-phone" aria-hidden="true"></i>
               Gọi ngay
             </button>
           </div>
         </div>
       </div>
 
-      <div id="main-content" class="container mb-5">
-        <div class="main-service">
-          <div class="title">Dịch vụ tóc</div>
+      <div id="main-content" className="container mb-5">
+        <div className="main-service">
+          <div className="title">Dịch vụ tóc</div>
 
-          <div class="card-group">
-            <div class="card ms-0" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+          <div className="card-group">
+            <div className="card ms-0" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={hair1}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Cắt tóc</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Cắt tóc</h5>
                 <div>
                   <span>Chỉ từ 70.000đ</span>
-                  <a href="#" class="float-end text-decoration-none">
+                  <a href="#" className="float-end text-decoration-none">
                     Xem chi tiết{" "}
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={hair2}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Duỗi</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Duỗi</h5>
                 <div>
                   <span>Chỉ từ 180.000đ</span>
-                  <a href="#" class="text-decoration-none float-end">
+                  <a href="#" className="text-decoration-none float-end">
                     Xem chi tiết
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={hair3}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Uốn</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Uốn</h5>
                 <div>
                   <span>Chỉ từ 369.000đ</span>
-                  <a href="#" class="text-decoration-none float-end">
+                  <a href="#" className="text-decoration-none float-end">
                     Xem chi tiết
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={hair4}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Nhuộm</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Nhuộm</h5>
                 <div>
                   <span>Chỉ từ 199.000đ</span>
-                  <a href="#" class="text-decoration-none float-end">
+                  <a href="#" className="text-decoration-none float-end">
                     Xem chi tiết
                   </a>
                 </div>
@@ -211,129 +211,129 @@ const Home = () => {
           </div>
         </div>
 
-        <div class="space">
-          <div class="title">Không gian & Đội ngũ</div>
+        <div className="space">
+          <div className="title">Không gian & Đội ngũ</div>
 
-          <div class="d-flex justify-content-between">
-            <div class="text-over-img-container">
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+          <div className="d-flex justify-content-between">
+            <div className="text-over-img-container">
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={space1}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="img-text-bottom-centered">
+              <div className="img-text-bottom-centered">
                 Không gian thoáng, mát và sạch sẽ
               </div>
             </div>
 
-            <div class="text-over-img-container">
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="text-over-img-container">
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={space2}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="img-text-bottom-centered">
+              <div className="img-text-bottom-centered">
                 Đội ngũ chuyên nghiệp
               </div>
             </div>
 
-            <div class="text-over-img-container">
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="text-over-img-container">
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={space3}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="img-text-bottom-centered">Thiết kế hiện đại</div>
+              <div className="img-text-bottom-centered">Thiết kế hiện đại</div>
             </div>
           </div>
         </div>
-        <div class="feedback">
-          <div class="title">Sản phẩm tóc</div>
+        <div className="feedback">
+          <div className="title">Sản phẩm tóc</div>
         </div>
 
-        <div class="card-group">
-            <div class="card ms-0" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+        <div className="card-group">
+            <div className="card ms-0" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={prod1}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Thuốc nhuộm tóc màu nâu</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Thuốc nhuộm tóc màu nâu</h5>
                 <div>
                   <span>Chỉ từ 70.000đ</span>
-                  <a href="/checkout" class="float-end text-decoration-none">
+                  <a href="/checkout" className="float-end text-decoration-none">
                     Xem chi tiết{" "}
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={prod2}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Dầu gội dưỡng</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Dầu gội dưỡng</h5>
                 <div>
                   <span>Chỉ từ 180.000đ</span>
-                  <a href="#" class="text-decoration-none float-end">
+                  <a href="#" className="text-decoration-none float-end">
                     Xem chi tiết
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={prod3}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Dầu gội vàng</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Dầu gội vàng</h5>
                 <div>
                   <span>Chỉ từ 369.000đ</span>
-                  <a href="#" class="text-decoration-none float-end">
+                  <a href="#" className="text-decoration-none float-end">
                     Xem chi tiết
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="img-hover-zoom img-hover-zoom--quick-zoom">
                 <img
                   src={prod4}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Another Image zoom-on-hover effect"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Thuốc nhuộm đỏ</h5>
+              <div className="card-body">
+                <h5 className="card-title text-primary fw-bold">Thuốc nhuộm đỏ</h5>
                 <div>
                   <span>Chỉ từ 199.000đ</span>
-                  <a href="#" class="text-decoration-none float-end">
+                  <a href="#" className="text-decoration-none float-end">
                     Xem chi tiết
                   </a>
                 </div>
@@ -341,50 +341,50 @@ const Home = () => {
             </div>
           </div>
 
-        <div class="feedback">
-          <div class="title">Feedback của khách hàng</div>
+        <div className="feedback">
+          <div className="title">Feedback của khách hàng</div>
         </div>
       </div>
 
       <footer>
-        <div class="row">
-          <div class="col-3 offset-md-2">
+        <div className="row">
+          <div className="col-3 offset-md-2">
             <p>Về chúng tôi</p>
             <p>Menu</p>
             <p>Địa chỉ: 82 Nguyễn Văn Cừ, Phường 8, Quận 3, TP.HCM</p>
           </div>
-          <div class="col-3">
+          <div className="col-3">
             <p>Giờ phục vụ: 9h-23h (Thứ 2 - Chủ Nhật)</p>
             <p>Số điện thoại: 0929003123</p>
           </div>
-          <div class="col-3">
+          <div className="col-3">
             <button
-              class="btn social-btn btn-outline-secondary  mb-2"
+              className="btn social-btn btn-outline-secondary  mb-2"
               type="button"
               id="button-addon2"
               style={{color: 'white'}}
             >
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <i className="fa fa-facebook-official" aria-hidden="true"></i>
               Facebook
             </button>
             <br />
             <button
-              class="btn btn-outline-secondary social-btn"
+              className="btn btn-outline-secondary social-btn"
               type="button"
               id="button-addon2"
             >
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i className="fa fa-instagram" aria-hidden="true"></i>
               Instagram
             </button>
           </div>
         </div>
       </footer>
       <button onClick={scrollToTop} id="btn-scroll-top" title="Go to top">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        <i className="fa fa-arrow-up" aria-hidden="true"></i>
       </button>
 
       <button id="btn-mess" title="Go to top">
-        <i class="fa fa-comment" aria-hidden="true"></i>
+        <i className="fa fa-comment" aria-hidden="true"></i>
       </button>
     </div>
   );

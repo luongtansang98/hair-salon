@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Custom footer styles */
+footer a:hover {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+/* Image hover zoom effects */
+.img-hover-zoom {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+/* Space section enhancements */
+.position-relative:hover .position-absolute {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+}
+
+/* Animation for info cards */
+.col-md-4:hover .bg-primary {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.col-md-4:hover h5 {
+  color: #007bff;
+  transition: color 0.3s ease;
+}

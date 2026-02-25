@@ -1,0 +1,166 @@
+/* You can add global styles to this file, and also import other style files */
+.background-app {
+  background: #dfdfdf78;
+  padding: 0 !important;
+}
+
+.carousel-item img {
+  height: 400px;
+}
+
+.navbar {
+  box-shadow: 5px 5px 10px #d5d2d2;
+  background-color: white;
+}
+
+.booking-wrapper {
+  width: 500px;
+  padding: 20px;
+  background-color: #dbf7f6;;
+  border: 1px solid #dbf7f6;;
+  border-radius: 5px;
+}
+
+.strong-blue {
+  background: #0000ff;
+}
+
+.strong-blue p {
+  color: white;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+#main-content {
+  min-height: 600px;
+}
+#main-content .card-group img {
+  height: 300px;
+}
+#main-content .card-group .card {
+  margin: 15px;
+  box-shadow: 5px 10px 10px #d1d1d1;
+  border-radius: 10px;
+}
+
+#main-content > div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main-content .title{
+  border-left: 10px solid #b9b9f0;
+  color: blue;
+  font-size: 24px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#main-content .space img{
+  height: 300px;
+  border-radius: 10px;
+  max-width: 420px;
+}
+
+.text-over-img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.img-text-bottom-centered {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 5px 5px 10px black;
+}
+
+
+
+#main-content img {
+  cursor: pointer;
+}
+
+#main-content .main-service img{
+  border-radius: 10px;
+}
+
+.img-hover-zoom {
+  overflow: hidden; /* Removing this will break the effects */
+}
+
+/* Quick-zoom Container */
+.img-hover-zoom--quick-zoom img {
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+/* The Transformation */
+.img-hover-zoom--quick-zoom:hover img {
+  transform: scale(1.08);
+}
+
+li.nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav a {
+  font-weight: 500;
+}
+.navbar-nav a:hover {
+  border-bottom: 1px solid blue;
+}
+
+.navbar-nav a.active {
+  border-bottom: 1px solid blue;
+}
+
+#btn-scroll-top, #btn-mess {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(101, 101, 241);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#btn-scroll-top{
+  bottom: 80px;
+}
+
+#btn-scroll-top:hover {
+  background-color: blue;
+}
+
+
+footer {
+  background: #2c2cf2;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.social-btn {
+  width: 150px !important;
+  background: white;
+  color: blue;
+  border-color: white;
+}
+
+.social-btn > .fa-instagram{
+  color: #f24040;
+}
