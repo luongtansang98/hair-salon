@@ -1,0 +1,8 @@
+https://luongtansang98.github.io/hair-salon/
+
+
+
+ng build --output-path docs --base-href /angular-app/
+
+
+ng build --output-path docs --base-href "https://luongtansang98.github.io/hair-salon/"
